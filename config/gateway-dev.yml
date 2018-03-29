@@ -9,6 +9,6 @@ spring:
     port: 6373
     password: Passw0rd
 
-user:
-  token:
-    url: /getToken
+sys:
+  noFilterUrl:
+    urls: /getToken,/ooooo
