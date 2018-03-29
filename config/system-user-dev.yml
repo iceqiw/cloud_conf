@@ -4,6 +4,10 @@ spring:
     data-username: userrw
     data-password: readwrite
     driver-class-name: com.mysql.jdbc.Driver
+    max-active: 20
+    max-idle: 8
+    min-idle: 8
+    initial-size: 10
 mybatis:
   type-aliases-package: com.cwgj.system.user.pojo
   mapper-locations: classpath:mapper/*.xml
