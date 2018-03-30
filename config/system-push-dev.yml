@@ -15,3 +15,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     maxActive: 2
     initialSize: 1
+ali:
+  accessKeySecret: weGHu2K5Zvhrr5nHbxRH4VuJfAm1i1
+  accessKeyId: LTAIKetz7j8zUhxC
+  signName: 车位管家
