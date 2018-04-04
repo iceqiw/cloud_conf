@@ -1,19 +1,26 @@
 spring:
+  application:
+    name: system-user
   datasource:
     url: jdbc:mysql://192.168.1.169:3306/system_user?useUnicode=true&characterEncoding=utf-8
-    data-username: userrw
-    data-password: readwrite
+    username: userrw
+    password: readwrite
+    type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    max-active: 20
-    max-idle: 8
-    min-idle: 8
-    initial-size: 10
+    druid:
+      max-active: 20
+      initial-size: 1
+      max-wait: 6000
+      min-idle: 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
 mybatis:
-  type-aliases-package: com.cwgj.system.user.pojo
   mapper-locations: classpath:mapper/*.xml
-mapper:
-  mappers: com.cwgj.system.user.base.BaseDao
-  not-empty: false
-  identity: MYSQL
-logging:
-  file: logback.xml
+  type-aliases-package: com.gjm.pojo
