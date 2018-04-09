@@ -12,5 +12,5 @@ spring:
 sys:
   noFilterUrl:
     urls: /getToken,/ooooo
-    isDev: true
-    restAuthUrl: http://system-push/wechat/list?name=
+  isDev: true
+  restAuthUrl: http://system-push/wechat/list?name=
