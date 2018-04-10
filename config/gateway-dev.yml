@@ -12,5 +12,7 @@ spring:
 sys:
   noFilterUrl:
     urls: /getToken,/ooooo
+  noFilterIp:
+    ips: 192.168.1.201
   isDev: true
   restAuthUrl: http://system-push/wechat/list?name=
