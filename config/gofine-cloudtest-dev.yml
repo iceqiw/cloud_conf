@@ -1,0 +1,12 @@
+spring:
+  redis:
+    host: cloud.ice.com
+    port: 6373
+    password: 1
+  datasource:
+    url: jdbc:mysql://cloud.ice.com:3306/testapp?useUnicode=true&characterEncoding=utf-8
+    username: qiwei
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    maxActive: 2
+    initialSize: 1
